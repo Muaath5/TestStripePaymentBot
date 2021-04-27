@@ -1,0 +1,114 @@
+{   
+    "bot_token": "xxxxxxx"
+    "telegram_payment_token": "xxxx:TEST:xxxx",
+    "logs_chat_id": 0
+    
+    "warning_message": "Hi! Use the test card number: <code>4242 4242 4242 4242</code>\n<b>And DON\'T add any real payment info</b>\nThe bot will store all data (Name and email, phone, ) except the bank data.\n\n<b>NOTE: THE BOT HAS\'T ACCESS TO ANY BANK DATA</b>.",
+    "success_message": "Success!\nDon\'t worry! This payment isn\'t real, And this bot is for testing 😁",
+    "start_message": "Welcome 😄\nThis bot is created to test <i>Telegram payments</i>.\n<b>To test unreal payment, use the command: /invoice</b>\nUse /help to more info about the bot.",
+    "project_message": "This project was created by @Muaath_5\nThis project is an open source project in <a href=\"https://github.com/Muaath5/TestStripePaymentBot\">Github</a> under MIT License",
+    "inline_message": "You can use send invoices via this bot in inline query! Just use the button below",
+    "help_message": "Use /start to get a little info about the bot.\nUse /invoice to get a Test invoice, Don\'t worry, it\'s a test.\nUse /inline to get info about inline queries.\nUse /project to get the project source and can help in the project.\nUse /help to get this menu again ☺.",
+    "answer_shipping_query_failed_log": "Failed: <code>answerShippingQuery</code> method, Contact the developer."
+    
+    "invoices": 
+    [
+        {
+            "title": "Coffee invoice (Test)",
+            "description": "Buy a coffee! (Not real).\nA stripe test invoice.\nUse test card number: 4242 4242 4242 4242",
+            "payload": "TestCoffeeInvoice",
+            "currency": "USD",
+            "start_param": "TestCoffeeInvoice",
+    
+            "photo_url": "https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg",
+            "photo_width": 1240,
+            "photo_height": 825,
+            
+            "is_flexible": true,
+            "need_shipping_address": true,
+    
+            "need_name": true,
+            "need_phone_number": true,
+            "need_email": true,
+    
+            "send_phone_number_to_provider": true,
+            "send_email_to_provider": true,
+            
+            "suggested_tip_amounts": [1, 2, 4, 8],
+            "max_tip_amount": 50,
+    
+            "shipping_options":
+            [
+                {
+                    "id": "Free",
+                    "label": "Free shipping",
+                    "amounts":
+                    [
+                        {
+                            "label": "Free shipping",
+                            "amount": 0
+                        }
+                    ]
+                }
+            ],
+    
+            "prices":
+            [
+                {
+                    "label": "A cup of coffee",
+                    "amount": 700
+                },
+                {
+                    "label": "A delicious chocolate",
+                    "amount": 500
+                },
+                {
+                    "label": "A bottle of water".
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "title": "A Telegram bot source code",
+            "description": "Buy a Telegram bot source code! (Not real)\nA stripe test invoice.\nUse test card number: 4242 4242 4242 4242",
+            "payload": "TestSourceCodeInvoice",
+            "currency": "USD",
+            "start_param": "TestSourceCodeInvoice",
+    
+            "photo_url": "https://itsourcecode.com/wp-content/uploads/2019/09/PHP-Projects-With-Source-Code-Free-Downloads.png",
+            "photo_width": 1055,
+            "photo_height": 627,
+            
+            "is_flixeble": false,
+            "need_shipping_address": false,
+    
+            "need_name": true,
+            "need_phone_number": true,
+            "need_email": true,
+    
+            "send_phone_number_to_provider": true,
+            "send_email_to_provider": true,
+            
+            "suggested_tip_amounts": [10, 20, 30],
+            "max_tip_amount": 100,
+    
+            "shipping_options": [],
+    
+            "prices":
+            [
+                {
+                    "label": "DLL libraries",
+                    "amount": 10000
+                },
+                {
+                    "label": "Source code",
+                    "amount": 50000
+                },
+                {
+                    "label": "Documentation".
+                    "amount": 20000
+                }
+            ]
+        }
+    ]
+}
