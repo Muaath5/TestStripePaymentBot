@@ -1,7 +1,7 @@
 {   
-    "bot_token": "xxxxxxx"
+    "bot_token": "xxxxxxx",
     "telegram_payment_token": "xxxx:TEST:xxxx",
-    "logs_chat_id": 0
+    "logs_chat_id": 0,
     
     "warning_message": "Hi! Use the test card number: <code>4242 4242 4242 4242</code>\n<b>And DON\'T add any real payment info</b>\nThe bot will store all data (Name and email, phone, ) except the bank data.\n\n<b>NOTE: THE BOT HAS\'T ACCESS TO ANY BANK DATA</b>.",
     "success_message": "Success!\nDon\'t worry! This payment isn\'t real, And this bot is for testing 😁",
@@ -9,7 +9,7 @@
     "project_message": "This project was created by @Muaath_5\nThis project is an open source project in <a href=\"https://github.com/Muaath5/TestStripePaymentBot\">Github</a> under MIT License",
     "inline_message": "You can use send invoices via this bot in inline query! Just use the button below",
     "help_message": "Use /start to get a little info about the bot.\nUse /invoice to get a Test invoice, Don\'t worry, it\'s a test.\nUse /inline to get info about inline queries.\nUse /project to get the project source and can help in the project.\nUse /help to get this menu again ☺.",
-    "answer_shipping_query_failed_log": "Failed: <code>answerShippingQuery</code> method, Contact the developer."
+    "answer_shipping_query_failed_log": "Failed: <code>answerShippingQuery</code> method, Contact the developer.",
     
     "invoices": 
     [
