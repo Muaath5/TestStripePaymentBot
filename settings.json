@@ -34,8 +34,12 @@
             "send_phone_number_to_provider": true,
             "send_email_to_provider": true,
             
-            "suggested_tip_amounts": [1, 2, 4, 8],
-            "max_tip_amount": 50,
+            "supported_shipping_countries": ["us"],
+            "supported_shipping_cities": [["NewYork"]],
+            "limit": 1000,
+    
+            "suggested_tip_amounts": [100, 200, 400, 800],
+            "max_tip_amount": 5000,
     
             "shipping_options":
             [
@@ -89,8 +93,12 @@
             "send_phone_number_to_provider": true,
             "send_email_to_provider": true,
             
-            "suggested_tip_amounts": [10, 20, 30],
-            "max_tip_amount": 100,
+            "supported_shipping_countries": ["us"],
+            "supported_shipping_cities": [["NewYork"]],
+            "limit": -1,
+            
+            "suggested_tip_amounts": [1000, 2000, 3000],
+            "max_tip_amount": 10000,
     
             "shipping_options": [],
     
